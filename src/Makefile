@@ -2,8 +2,8 @@
 # If building cross platform then uncomment your target. This builds
 # for OpenBSD
 #
-#GOOS=darwin
-#GOARCH=amd64
+GOOS=darwin
+GOARCH=amd64
 #
 #GOOS=android
 #GOARCH=arm
@@ -71,8 +71,8 @@
 #GOOS=openbsd
 #GOARCH=386
 #
-GOOS=openbsd
-GOARCH=amd64
+#GOOS=openbsd
+#GOARCH=amd64
 #
 #GOOS=openbsd
 #GOARCH=arm

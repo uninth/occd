@@ -46,6 +46,7 @@ func main() {
 	** at least on 6.5, so read 'state' from $0
 	 */
 	var status string
+
 	switch os := filepath.Base(os.Args[0]); os {
 	case "connect":
 		status = "connect"
@@ -111,6 +112,28 @@ func ensureDir(dirName string) error {
 	} else {
 		return err
 	}
+	/*
+		{
+			f := filepath.Base(os.Args[0])
+			_, err := os.Lstat("bin/connect")
+			if err != nil {
+				err = os.Symlink(f, "bin/connect")
+				if err != nil {
+					log.Fatal(err)
+				}
+
+			}
+
+			_, err = os.Lstat("bin/disconnect")
+			if err != nil {
+				err = os.Symlink(f, "bin/disconnect")
+				if err != nil {
+					log.Fatal(err)
+				}
+			}
+		}
+	*/
+
 }
 
 /*
