@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Assuming you have multible openvpn environments, and your environments are
-# devined in /usr/local/etc/openvpn while the chroot is in /var/openvpn, and
+# defined in /usr/local/etc/openvpn while the chroot is in /var/openvpn, and
 # that a copy of the occd is in /var/openvpn, you may use this script to en-
 # sure the logging is setup correctly
 
