@@ -28,6 +28,7 @@ While the `chroot` in e.g. `/var/openvpn/server` should have a similar setup
 |   `-- user3_device.csv
 `-- tmp
 ````
+Notice permissions and ownership are critical; see [src/setup.sh](src/setup.sh).
 
 Where `connect` and `disconnect` are symbolic links to `occd`.
 
